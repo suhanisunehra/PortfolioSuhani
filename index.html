@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <title>Portfolio</title>
 </head>
@@ -14,6 +15,13 @@
     <nav class='navBar'>
       <h1>Suhani Sunehra's Portfolio</h1>
       <div class='navigationMenu'>
+        <a href="https://github.com/suhanisunehra">
+        <button style="background-color: #0082ca;"><i class="fa-brands fa-github"></i></button>
+        </a>
+        <a href="https://www.linkedin.com/in/suhani-sunehra-79a4a4258/">
+        <button style="background-color: #0082ca;"><i class="fab fa-linkedin-in"></i></button></a> 
+        <a href="#">
+          <button style="background-color: #0082ca;"><i class="fa-solid fa-id-card"></i></button></a> 
         <a href="#aboutMe">About Me</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -22,7 +30,7 @@
     </nav>
  
 <section class='heroSection'>
-  <img class='profile'src='https://www.w3schools.com/howto/img_avatar2.png'>
+  <img class='profile'src='./images/passportphoto.jpg'>
   <div class='herosectiondetails'>
     <h1>SUHANI SUNEHRA</h1>
     <h3>Computer Science Engineer at GRIET</h3>
@@ -36,7 +44,7 @@
  
     <section class="skillsandProjects"> 
       <div class='skills' id='skills'>
-        <h1 class='cardHeading'>Skills</h1>
+        <h1 class='cardHeading'>Technical Proficiency</h1>
         <br>
        <img title='HTML' src='./images/html.svg'>
           <img title='CSS' src='./images/csss.svg'>
@@ -59,7 +67,7 @@
           </div>
 
 
-<div class='projectContainer'>
+      <div class='projectContainer'>
             <img src='./images/csss.svg'/>
             <div class='projectDescription'>
               <h4>House Pricing Prediction Website</h4>
@@ -78,6 +86,30 @@
             </div>
           </div>
         </div>
+
+        
+        <div class='currentprojects' id='currentprojects'>
+        <h1 class='cardHeading1'>Current Projects</h1>
+        <div class='projectContainer'>
+          <img src='./images/python.svg'/>
+          <div class='projectDescription'>
+            <h4>Drone Based Oil Spill Detection</h4>
+            <p>Using drones to capture imaging and detecting oil spills</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='currentprojects' id='currentprojects'>
+        <h1 class='cardHeading1'>Current Projects</h1>
+      <div class='projectContainer'>
+        <img src='./images/rust.svg'/>
+        <div class='projectDescription'>
+          <h4>Decentralised Social Blogging app</h4>
+          <p>Building a social media dApp on the SubSocial blockchain in Kusama ecosystem</p>
+        </div>
+      </div>
+    </div>
+      
    
     </section>
  
@@ -98,7 +130,11 @@
         </div>
         <button class='submitButton' onClick={submit()}>Connect</button>
       </section>
+     
+
     </main>
     <script src="script.js"></script>
   </body>
 </html>
+
+
