@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Portfolio</title>
+</head>
+ 
+<body>
+  <main class='main'>
+    <nav class='navBar'>
+      <h1>Suhani Sunehra's Portfolio</h1>
+      <div class='navigationMenu'>
+        <a href="#aboutMe">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contactForm">Let's Connect!</a>
+      </div>
+    </nav>
+ 
+<section class='heroSection'>
+  <img class='profile'src='https://www.w3schools.com/howto/img_avatar2.png'>
+  <div class='herosectiondetails'>
+    <h1>SUHANI SUNEHRA</h1>
+    <h3>Computer Science Engineer at GRIET</h3>
+  </div>
+</section>
+ 
+<section class='aboutMe' id='aboutMe'>
+<h1>WHAT I DO</h1>
+  <p> I am currently a first year student studying B. Tech (Computer Science Engineering - CSE) in GRIET, Hyderabad. I'm interested in Data Science and Web Development.</p>
+</section>
+ 
+    <section class="skillsandProjects"> 
+      <div class='skills' id='skills'>
+        <h1 class='cardHeading'>Skills</h1>
+        <br>
+       <img title='HTML' src='./images/html.svg'>
+          <img title='CSS' src='./images/csss.svg'>
+          <img title='Javascript' src='./images/javascript.svg'>
+          <img title='Java' src='./images/java.svg'>
+          <img title='Rust' src='./images/rust.svg'>
+          <img title='C' src='./images/c.svg'>
+          <img title='Python' src='./images/python.svg'>
+      </div>
+      
+      
+      <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='./images/python.svg'/>
+            <div class='projectDescription'>
+              <h4>Prediction of Forest Fires</h4>
+              <p>Prediciting Forest Fires based on meterological factors and fire weater indices (FFMC, DMC, ISI) using machine learning algorithms</p>
+            </div>
+          </div>
+
+
+<div class='projectContainer'>
+            <img src='./images/csss.svg'/>
+            <div class='projectDescription'>
+              <h4>House Pricing Prediction Website</h4>
+              <p> A website prediciting prices of houses on the Californian market </p>
+            </div>
+          </div>
+
+
+        
+        
+          <div class='projectContainer'>
+            <img src='./images/python.svg'/>
+            <div class='projectDescription'>
+              <h4>Birth Rate Analysis</h4>
+              <p>Analysing annual Birth Rate in India based on data from Census India</p>
+            </div>
+          </div>
+        </div>
+   
+    </section>
+ 
+    </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email ID</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send me a message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
